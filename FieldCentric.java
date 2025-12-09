@@ -100,6 +100,7 @@ public class FieldCentric extends LinearOpMode {
             rotX = rotX * 1.1;
 
             // --- MECANUM DRIVE CALCULATION ---
+            
             // Calculate the power for each wheel based on the field-centric inputs.
             // The denominator is the largest possible power value, used for normalization.
             double denominator = Math.max(Math.abs(rotY) + Math.abs(rotX) + Math.abs(rx), 1);
